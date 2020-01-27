@@ -5,13 +5,13 @@ import requests
 app = Flask(__name__)
 
 @app.route("/")
-def test():
+def send_sms():
     r = requests.get("http://easy-mtapi.herokuapp.com/by-id")
 
     # Your Account SID from twilio.com/console
-    account_sid = "AC4e6ffa07363705b56bca2f0002b5a79a"
+    account_sid = ***************************
     # Your Auth Token from twilio.com/console
-    auth_token  = "8c3adf12edd1f1c0ba4fa7c79c027599"
+    auth_token  = ***************************
 
     client = Client(account_sid, auth_token)
 
